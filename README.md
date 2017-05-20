@@ -5,7 +5,5 @@
 - JavaScript (jQuery)
 - PHP
 
-## [ページに飛ぶ](https://hama3.github.io/EasyNWCreation/)
-
 # おわりに
 自由にお使いください。
