@@ -985,17 +985,17 @@ $("#connect-start").click(function(){
   $("#nsf-console").append("<p>> 送信開始･･･</p>");
   console.log("送信するデータ･･･"+ NSFCS.postData);
 
-  // ajaxの動作
-  $.ajax({
-    type: 'POST',
-    dataType: 'json',
-    url: '../../ns-allinone-3.25/ns-3.25/index.php',
-    data: 'data=' + NSFCS.postData
-  }).done(function(data) {
-    $("#nsf-console").append("<p>> 受信データ･･･"+ data +"</p>");
-  }).fail(function(XMLHttpRequest, textStatus) {
-    $("#nsf-console").append("<p>> エラーが発生したので処理を終了します。</p>");
-  });
+  // ajaxの動作 (使用する場合は以下のコメントアウトを外してください)
+  // $.ajax({
+  //   type: 'POST',
+  //   dataType: 'json',
+  //   url: '../../ns-allinone-3.25/ns-3.25/index.php',
+  //   data: 'data=' + NSFCS.postData
+  // }).done(function(data) {
+  //   $("#nsf-console").append("<p>> 受信データ･･･"+ data +"</p>");
+  // }).fail(function(XMLHttpRequest, textStatus) {
+  //   $("#nsf-console").append("<p>> エラーが発生したので処理を終了します。</p>");
+  // });
 });
 
 // Getをクリック
