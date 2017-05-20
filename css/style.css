@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/*
+  Theme Name: Network Simulator
+  Author: PICNIC
+  Description: This is my original theme.
+  Version: 1.0
+  ※ IDが含まれているけど許してください.
+
+  margin: [up][right][down][left]
+*/
+
+/* Moodleのプラグインとして入れる時は,bodyの記述を消してください. */
+body {
+  margin: 10px auto 0;
+  width: 900px;
+  background: #eee;
+}
+
+#nsf-all {
+  width: 900px;
+}
+#nsf-container, #glayLayer {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+#nsf-nav {
+  margin: 0 0 2px;
+  padding: 2px;
+  width: 894px;
+  height: 42px;
+}
+#nsf-nav img {
+  padding: 1px 3px;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+#nsf-left, #nsf-main, #nsf-right, #nsf-console, #nsf-nav {
+  float: left;
+  border: 1px solid #999;
+  background: #FFF;
+}
+#nsf-container:after, #studyMenuForm:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* nsf-left decoration */
+#nsf-left {
+  margin-right: 3px;
+  padding: 5px 5px;
+  width: 82px;
+  height: 549px;
+}
+#nsf-left .machinery {
+  margin: 0 6px;
+}
+#nsf-left-switch input, #nsf-left-switch-2 input {
+  display: none;
+}
+#nsf-left-switch label, #nsf-left-switch-2 label {
+  display: block;
+  float: left;
+  cursor: pointer;
+  padding: 5px 1px;
+  background: #bdc3c7;
+  color: #869198;
+  text-align: center;
+  line-height: 1;
+}
+#nsf-left-switch label:first-of-type, #nsf-left-switch-2 label:first-of-type {
+  border-radius: 3px 0 0 3px;
+}
+#nsf-left-switch label:last-of-type, #nsf-left-switch-2 label:last-of-type {
+  border-radius: 0 3px 3px 0;
+}
+#nsf-left-switch input[type="radio"]:checked + .switchlan-1, #nsf-left-switch-2 input[type="radio"]:checked + .switchlan-2 {
+  background-color: #a1b91d;
+  color: #fff;
+}
+#nsf-left-switch label {
+  width: 39px;
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+#nsf-left-switch-2 #labelCenter {
+  width: 26px;
+  margin: 0;
+  font-size: 8px;
+}
+#nsf-left-switch-2 label:not(#labelCenter) {
+  width: 25px;
+  margin: 0;
+  font-size: 8px;
+}
+
+/* nsf-main decoration */
+#nsf-main {
+  width: 600px;
+  height: 400px;
+}
+#nsf-main .lanOn {
+  opacity: 0.6;
+  /* user-select: none; */
+}
+#nsf-main .get-node2, #nsf-main .send-node2 {
+  position: absolute;
+  z-index: 1;
+}
+
+/* nsf-right decoration */
+#nsf-right {
+  margin: 0 0 0 2px;
+  width: 197px;
+  height: 379px;
+  font-size: 13px;
+  overflow: scroll;
+}
+#nsf-right dl {
+  margin: 0;
+}
+#nsf-right dt {
+  height: 15px;
+}
+#nsf-right dt img {
+  margin: 0 4px 0 2px;
+}
+#nsf-right img:hover {
+  opacity: 0.4;
+}
+#nsf-right dd {
+  margin: 0 0 0 18px;
+}
+#nsf-right p {
+  margin: 0;
+}
+
+/* nsf-console decoration */
+#nsf-console {
+  margin: 0;
+  padding: 2px;
+  width: 797px;
+  height: 130px;
+  overflow: scroll;
+}
+#nsf-console p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+/* nsf-right-info & nsf-console-info decorations */
+#nsf-right-info, #nsf-console-info {
+  float: left;
+  margin: 0;
+}
+#nsf-right-info {
+  margin: 0 0 0 2px;
+  width: 199px;
+}
+#nsf-console-info {
+  margin: 2px 0 0 0;
+  width: 803px;
+}
+#nsf-right-info p, #nsf-console-info p {
+  margin: 0;
+  padding: 1px 1px 1px 4px;
+  border: 1px solid #999;
+  background: #ddd;
+  height: 17px;
+  font-size: 12px;
+}
+#nsf-right-info p img {
+  float: right;
+  margin: 0;
+  padding: 1px;
+}
+
+/* gleyLayer decoration */
+#glayLayer {
+  display: none;
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  border: solid 2px;
+  z-index: 10;
+}
+#glayLayer > img:hover {
+  opacity: 0.4;
+}
+#glayClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+#slideGalley {
+  position: absolute;
+  width: 600px;
+  top: 120px;
+  left: 150px;
+  overflow: hidden;
+}
+#slideUl {
+  margin: 0;
+  padding: 0;
+  width: 5000px;
+}
+#slideUl li {
+  list-style-type: none;
+  float: left;
+}
+#infoLeft {
+  position: absolute;
+  top: 306px;
+  left: 25px;
+}
+#infoRight {
+  position: absolute;
+  top: 306px;
+  right: 25px;
+}
+#glayStudyMenu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 12%;
+  left: 5%;
+  width: 90%;
+  height: 85%;
+}
+#studyMenuInput {
+  padding-bottom: 4%;
+  width: 100%;
+  height: 80%;
+  border-bottom: dashed 1px #dadada;
+}
+#studyMenuOutput {
+  width: 100%;
+  height: 15%;
+}
+#studyInputLeft {
+  float: left;
+  width: 44%;
+  height: 98%;
+  padding: 0 15%;
+  background: #f0f8ff;
+  border: solid 1px;
+}
+#studyInputLeft p {
+  margin: 5% 0;
+  padding: 2%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #043c78;
+  background: #f0f8ff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 1.0em 0 0 0 #f0f8ff, -1.0em 0 0 0 #f0f8ff;
+}
+#studyInputLeft img {
+  margin: -1px;
+  width: 100%;
+  border: solid 1px;
+}
+#studyInputLeft button {
+  margin: 5% 35% 0;
+  width: 30%;
+  height: 8%;
+}
+#studyInputRight {
+  float: left;
+  margin-left: 3%;
+  width: 22%;
+  height: 98%;
+  background-color: #fff;
+  border: solid 1px;
+}
+#studyInputRight ul {
+  list-style-type: none;
+  padding-left: 2px;
+}
+#studyInputRight li {
+  position:relative;
+  margin: 5px 0;
+	padding: 5px 0px 5px 30px;
+  background: #ccc;
+	color: #444;
+	border-radius:15px 0px 0px 15px;
+}
+#studyInputRight li:after {
+	content:'';
+	position:absolute;
+	width: 14px;
+	height: 14px;
+	top: 7px;
+	left: 5px;
+	background: #fff;
+	border-radius: 10px;
+}
+#studyInputRight li:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+#studyMenuForm {
+  margin: 4% 25% 0;
+}
+#studyMenuForm input {
+  float: left;
+  width: 250px;
+  height: 20px;
+  text-align: center;
+}
+#studyMenuForm button {
+  float: left;
+  width: 100px;
+  height: 26px;
+}
+
+/* canvas decorations */
+canvas {
+	position: absolute;
+}
+
+/* context-menu decorations */
+.context-IP {
+  width: 105px;
+}
+.context-SM {
+  float: right;
+  width: 60px;
+}
+.context-menu-item span {
+  font-size: 13px;
+}
+
+/* etc */
+.height_line {
+  float: left;
+  margin: 4px 8px;
+  border-left: 1px solid #a1a1a1;
+  height: 33px;
+}
+.width_line {
+  margin: 4px 3px;
+  border-top: 1px solid #a1a1a1;
+}
+.dragout {
+  opacity: 0.4;
+}
+.ui-draggable {
+  cursor: pointer;
+}
+#nsf-nav img:hover, #lan:hover, #nsf-right-info img:hover{
+  margin: -1px;
+  border: 1px solid #0029ff;
+  border-radius: 5px;
+}

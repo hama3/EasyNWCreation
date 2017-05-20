@@ -1,0 +1,85 @@
+{
+  "studyId": 1,
+  "lanNode": 6,
+  "pc": {
+    "node": 2,
+    "name": "PC",
+    "style": [
+      { "top": 60,  "left": 20  },
+      { "top": 290, "left": 510 }
+    ],
+    "lan": ["sP_0", "sP_1"],
+    "ip": ["192.168.1.2", "192.168.2.2"],
+    "sm": [24, 24],
+    "send": [true, false],
+    "get": [false, true],
+    "badgeStyle": [
+      { "top": 45, "left": 62 },
+      { "top": 275, "left": 552 }
+    ]
+  },
+  "router": {
+    "node": 4,
+    "name": "Router",
+    "style": [
+      { "top": 110, "left": 160 },
+      { "top": 130, "left": 360 },
+      { "top": 220, "left": 180 },
+      { "top": 240, "left": 380 }
+    ],
+    "lan": ["eP_0 sP_2 sP_3", "eP_2 sP_5", "eP_3 sP_4", "eP_1 eP_4 eP_5" ],
+    "ip": [
+      { "first": "192.168.1.1", "second": "192.168.2.1"},
+      { "first": "192.168.1.1", "second": "192.168.2.1"},
+      { "first": "192.168.1.1", "second": "192.168.2.1"},
+      { "first": "192.168.1.1", "second": "192.168.2.1"}
+    ],
+    "sm": [
+      { "first": 24, "second": 24},
+      { "first": 24, "second": 24},
+      { "first": 24, "second": 24},
+      { "first": 24, "second": 24}
+    ]
+  }
+}
+
+
+{
+  "studyId" : 2,
+  "lanNode" : 4,
+  "pc" : {
+    "node" : 4,
+    "name" : "PC",
+    "style" : [
+      { "top" : 75, "left" : 90 },
+      { "top" : 265, "left" : 90 },
+      { "top" : 75, "left" : 500 },
+      { "top" : 265, "left" : 500 }
+    ],
+    "lan" : [ "sP_0", "sP_1", "sP_2", "sP_3" ],
+    "ip" : [ "192.168.1.2", "192.168.1.3", "192.168.2.2", "192.168.2.3" ],
+    "sm" : [ 24, 24, 24, 24 ],
+    "send" : [ true, false, false, false ],
+    "get" : [ false, false, false, true ],
+    "badgeStyle" : [
+      { "top" : 60, "left" : 132 },
+      {  },
+      {  },
+      { "top" : 250, "left" : 542 }
+    ]
+  },
+  "router" : {
+    "node" : 1,
+    "name" : "Router",
+    "style" : [
+      { "top" : 170, "left" : 285 }
+    ],
+    "lan" : [ "eP_0 eP_1 eP_2 eP_3" ],
+    "ip" : [
+      { "first" : "192.168.1.1", "second" : "192.168.2.1" }
+    ],
+    "sm" : [
+      { "first" : 24, "second" : 24 }
+    ]
+  }
+}

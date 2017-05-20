@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>Network Simulator</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="src/jquery.contextMenu.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery-ui-1.12.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="src/jquery.contextMenu.js"></script>
+</head>
+
+<body>
+  <div id="nsf-all">
+    <div id="nsf-container">
+      <div id="nsf-nav">
+        <img src="img/dust.png" id="dust" title="全削除">
+        <div class="height_line"></div>
+        <img src="img/start.png" id="connect-start" title="実行">
+        <div class="height_line"></div>
+        <img src="img/get_1.png" id="get-packet" title="受信パケットを付与">
+        <img src="img/send_1.png" id="send-packet" title="送信パケットを付与">
+        <img src="img/reset_1.png" id="reset-packet" title="付与パケットの削除">
+        <div class="height_line"></div>
+        <img src="img/study.png" id="study" title="練習問題">
+        <div class="height_line"></div>
+        <img src="img/info.png" id="info" title="ヘルプ">
+        <!-- <div class="height_line"></div>
+        <img src="img/cui.png" id="cui" title="Debug"> -->
+      </div>
+      <div id="nsf-left">
+        <img src="img/pc.png" alt="PC" class="machinery">
+        <div class="width_line"></div>
+        <img src="img/router.png" alt="Router" class="machinery">
+        <div class="width_line"></div>
+        <img src="img/lanCable.png" id="lan" title="LANを繋げる">
+        <div id="nsf-left-switch">
+          <input type="radio" name="lanRadio" id="on-1" value="radio-1" checked="checked">
+          <label for="on-1" class="switchlan-1">スター</label>
+          <input type="radio" name="lanRadio" id="on-2" value="radio-2">
+          <label for="on-2" class="switchlan-1">バス</label>
+        </div>
+        <div id="nsf-left-switch-2">
+          <input type="radio" name="lanRadio-2" id="on-3" value="radio-3" checked="checked">
+          <label for="on-3" class="switchlan-2">100</label>
+          <input type="radio" name="lanRadio-2" id="on-4" value="radio-4">
+          <label for="on-4" id="labelCenter" class="switchlan-2">200</label>
+          <input type="radio" name="lanRadio-2" id="on-5" value="radio-5">
+          <label for="on-5" class="switchlan-2">1G</label>
+        </div>
+      </div>
+      <div id="nsf-main"><canvas width="600" height="400" id="nsf-main-canvas" class=""></canvas></div>
+      <div id="nsf-right-info">
+        <p>トポロジーの概要
+          <img src="img/close.png" id="r-close" title="詳細を閉じる">
+          <img src="img/open.png" id="r-open" title="詳細を開く">
+        </p>
+      </div>
+      <div id="nsf-right"><dl></dl></div>
+      <div id="nsf-console-info"><p>コンソール</p></div>
+      <div id="nsf-console"></div>
+    </div>
+    <div id="glayLayer"></div>
+  </div>
+</body>
+</html>
